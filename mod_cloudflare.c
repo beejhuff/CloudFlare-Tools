@@ -38,7 +38,7 @@
 #include "apr_want.h"
 #include "apr_network_io.h"
 
-#if AP_SERVER_MAJORVERSION >= 4
+#if AP_SERVER_MINORVERSION_NUMBER >= 4
   #define CF_REMOTE_ADDR client_addr
   #define CF_REMOTE_IP   client_ip
 #else
